@@ -21,13 +21,19 @@ def start(update, context):
 
 #BOT FUNCTIONS
 def TextFunction(update,context):
-    context.bot.send_message(chat_id=update.effective_chat.id, text='MESSAGE TO SEND HERE')
+    # update.message.text contains the last message sent in the chat
+    if 'Hello Bot' in update.message.text:
+        context.bot.send_message(chat_id=update.effective_chat.id, text='MESSAGE TO SEND HERE')
+    else:
+        context.bot.send_message(chat_id=update.effective_chat.id, text='OTHER MESSAGE TO SEND HERE')
 
 def ImgFunction(update,context):
-    context.bot.send_message(chat_id=update.effective_chat.id, text='MESSAGE TO SEND HERE')
+    #TO GET THE PHOTO SENT BY USER YOU CAN USE THE FOLLOW METHOD AND PARAM
+    #context.bot.get_file(update.message.photo[-1])
     #IF WE WANT TO SEND A PHOTO THE PATTERN IS:
     # context.bot.send_photo(chat_id=update.effective_chat.id, photo='PHOTO URL', caption= 'CAPTION BELOW THE PHOTO TO SEND')
-
+    context.bot.send_message(chat_id=update.effective_chat.id, text='MESSAGE TO SEND HERE')
+    
 #HANDLER FOR TEXT MESSAGES ONLY
 TextHandler =  MessageHandler(Filters.text,TextFunction)
 #HANDLER FOR IMAGE MESSAGE ONLY
