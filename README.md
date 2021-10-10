@@ -58,9 +58,9 @@ Just run the script locally or on Heroku and Telegram will detect the running co
 ![alt text](https://i.ibb.co/hg5srd4/Schermata-da-2021-10-10-15-51-13.png)
 * Click on python and Save Changes
 
-### Deploy 
 ![alt text](https://i.ibb.co/yW1fGQ6/Schermata-da-2021-10-10-15-51-01.png)
-* To deploy the code you have different options, i usually connect the github repository to use automatic deploy when a commit is sent. 
+### Deploy 
+* You have different options to deploy the code, i usually connect the github repository to use automatic deploy when a commit is sent. 
 * To use the same deploy method:
 1. Connect your **GitHub Profile** to **Heroku**
 2. Connect the app to your **__Github Repository__**
