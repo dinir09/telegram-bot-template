@@ -57,7 +57,6 @@ Just run the script locally or on Heroku and Telegram will detect the running co
 * Go to Settings of your App and add the Python Buildpack
 ![alt text](https://i.ibb.co/hg5srd4/Schermata-da-2021-10-10-15-51-13.png)
 * Click on python and Save Changes
-
 ![alt text](https://i.ibb.co/yW1fGQ6/Schermata-da-2021-10-10-15-51-01.png)
 ### Deploy 
 * You have different options to deploy the code, i usually connect the github repository to use automatic deploy when a commit is sent. 
