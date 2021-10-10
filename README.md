@@ -80,6 +80,7 @@ Just run the script locally or on Heroku and Telegram will detect the running co
 Contributors names and contact info
 
 Github [Renato Milano](https://github.com/renato-milano) 
+
 Instagram: [@renatomilano96](https://www.instagram.com/renatomilano96/)
 
 ## Version History
