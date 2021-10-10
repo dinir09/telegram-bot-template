@@ -7,16 +7,16 @@ A template with a light setup to start building faster your telegram bot and dep
 Improve your Bot telegram release speed just having a clean set of files and basic functions to get your bot online in less step.
 Files included:
 
-* _bot.py_:
+* **_bot.py_**:
 The main Python script
-* _Procfile_:
+* **_Procfile_**:
 This file define the starter and what type of application you will deploy.It' used to help Heroku to set the right enviroment for your case.
-* _requirements.txt_:
+* **_requirements.txt_**:
 This file is used to say Heroku what dependencies you are going to use. At init is just python-telegram-bot
 
 ## Getting Started
 
-* Download the repository
+### Download the repository
 ```
 git clone https://github.com/renato-milano/telegram-bot-template
 ```
