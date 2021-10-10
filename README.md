@@ -15,7 +15,7 @@ If you want to test it locally you will need:
 * PIP
 * python-telegram-bot
 
-### Installing
+### Installing (Linux)
 
 * Installing Python
 ```
