@@ -18,7 +18,7 @@ Improve your Bot telegram release speed just having a clean set of files and bas
 * **_bot.py_**:
 The main Python script
 * **_Procfile_**:
-This file define the starter and what type of application you will deploy.It' used to help Heroku to set the right enviroment for your case.
+This file define the starter and what type of application you will deploy.It's used to help Heroku to set the right enviroment for your case.
 * **_requirements.txt_**:
 This file is used to say Heroku what dependencies you are going to use. At init is just python-telegram-bot
 
