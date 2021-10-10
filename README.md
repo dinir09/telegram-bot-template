@@ -1,6 +1,6 @@
 # Telegram Bot Template
 
-A template with a light setup to start faster building your telegram bot and deploy on Heroku.
+A template with a light setup to start building faster your telegram bot and deploy it on Heroku.
 
 ## Description
 
@@ -44,9 +44,6 @@ ex. [@renatomilano96](https://www.instagram.com/renatomilano96/)
 
 ## Version History
 
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
 * 0.1
     * Initial Template Release
 
@@ -56,7 +53,7 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 
 ## Acknowledgments
 
-Inspiration, code snippets, etc.
+Inspiration, code snippets, generic infos.
 * [python-telegram-bot](https://pypi.org/project/python-telegram-bot/)
 * [PIP](https://pypi.org/)
 * [Python](https://www.python.org/)

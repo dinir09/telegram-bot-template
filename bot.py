@@ -41,6 +41,7 @@ start_handler = CommandHandler('start', start)
 
 #ADDING HANDLER AS EVENT LISTENER
 dispatcher.add_handler(TextHandler)
+dispatcher.add_handler(photoHandler)
 dispatcher.add_handler(start_handler)    
 
 #UPDATER START LOOPING
