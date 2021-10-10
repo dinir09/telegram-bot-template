@@ -52,8 +52,8 @@ Just run the script locally or on Heroku and Telegram will detect the running co
 
 Contributors names and contact info
 
-ex. [Renato Milano](https://github.com/renato-milano) 
-ex. [@renatomilano96](https://www.instagram.com/renatomilano96/)
+Github [Renato Milano](https://github.com/renato-milano) 
+Instagram: [@renatomilano96](https://www.instagram.com/renatomilano96/)
 
 ## Version History
 * See [commit change](https://github.com/renato-milano/telegram-bot-template/commits/main)
