@@ -1,6 +1,6 @@
 # Telegram Bot Template 👨‍💻 
 ![alt text](https://miro.medium.com/max/1400/1*rK34spWM1alCH4Si5vEKjw.png)
-##### A Python Template with a small setup to start building faster your telegram bot and deploy it on Heroku.
+#### A Python Template with a small setup to start building faster your telegram bot and deploy it on Heroku.
 
 #### Steps:
 
@@ -45,7 +45,7 @@ sudo apt install python3.8
 ```
 sudo apt install python3-pip
 ```
-* If you are using Windows or Mac check the tons of tutorials/docs on internet to install Python and PIP on your machine :D
+**If you are using Windows or Mac check the tons of tutorials/docs on internet to install Python and PIP on your machine :D**
 
 * Installing Python Telegram Bot (Linux/Windows/MacOS)
 ```
