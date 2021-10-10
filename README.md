@@ -55,7 +55,14 @@ ex. [Renato Milano](https://github.com/renato-milano)
 ex. [@renatomilano96](https://www.instagram.com/renatomilano96/)
 
 ## Version History
+* See [commit change](https://github.com/renato-milano/telegram-bot-template/commits/main)
 
+* 0.4
+    * ReadMe and Guide improve
+* 0.3
+    * Comments adde for better code reading
+* 0.2
+    * Snippet for Image retrieve added
 * 0.1
     * Initial Template Release
 
