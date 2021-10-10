@@ -1,5 +1,5 @@
 # Telegram Bot Template
-
+![alt text](https://miro.medium.com/max/1400/1*rK34spWM1alCH4Si5vEKjw.png)
 A template with a light setup to start building faster your telegram bot and deploy it on Heroku.
 
 ## Description
