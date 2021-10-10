@@ -48,6 +48,27 @@ pip install python-telegram-bot
 
 Just run the script locally or on Heroku and Telegram will detect the running code.   
 
+## Heroku Deploy
+### Setting up Heroku 
+
+* Login on Heroku and Create a new App
+![alt text](https://i.ibb.co/FB7rYJj/Schermata-da-2021-10-10-15-49-28.png)
+
+* Go to Settings of your App and add the Python Buildpack
+![alt text](https://i.ibb.co/hg5srd4/Schermata-da-2021-10-10-15-51-13.png)
+* Click on python and Save Changes
+
+### Deploy 
+![alt text](https://i.ibb.co/yW1fGQ6/Schermata-da-2021-10-10-15-51-01.png)
+* To deploy the code you have different options, i usually connect the github repository to use automatic deploy when a commit is sent. 
+* To use the same deploy method:
+1. Connect your **GitHub Profile** to **Heroku**
+2. Connect the app to your **__Github Repository__**
+   - In the Deploy page of your app click Connect to GitHub
+   - Search for your repository name
+   - Click Connect
+![alt text](https://i.ibb.co/JQ0F7Sv/Schermata-da-2021-10-10-15-50-27.png)
+
 ## Authors
 
 Contributors names and contact info
