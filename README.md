@@ -5,7 +5,8 @@ A template with a light setup to start building faster your telegram bot and dep
 ## Description
 
 Improve your Bot telegram release speed just having a clean set of files and basic functions to get your bot online in less step.
-Files included:
+
+### Files included:
 
 * **_bot.py_**:
 The main Python script
