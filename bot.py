@@ -1,55 +1,24 @@
-from telegram.ext import Updater
-from telegram.ext import CommandHandler
-from telegram.ext import MessageHandler, Filters
-from telegram import ParseMode #PARSEMODE IS FOR HTML RESPONSE TYPE IF WE NEED
+import os
+from telegram import Update
+from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 
-#BASIC LOGGING FUNCTION
-import logging
-logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-                     level=logging.INFO)
+async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    await update.message.reply_text("Привет, я живой!")
 
-TOKEN ='INSERT YOUR BOT TOKEN HERE'
+async def echo(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    await update.message.reply_text(update.message.text)
 
-#BOT CONFIGURATION
-updater = Updater(token=TOKEN, use_context=True)
-dispatcher = updater.dispatcher
-#CONFIGURATION END
-
-#COMMAND FUNCTIONS
-def start(update, context):
-    context.bot.send_message(chat_id=update.effective_chat.id, text='START MESSAGE TO SEND')
-
-#BOT FUNCTIONS
-def TextFunction(update,context):
-    # update.message.text contains the last message sent in the chat
-    if 'Hello Bot' in update.message.text:
-        context.bot.send_message(chat_id=update.effective_chat.id, text='MESSAGE TO SEND HERE')
-    else:
-        context.bot.send_message(chat_id=update.effective_chat.id, text='OTHER MESSAGE TO SEND HERE')
-
-def ImgFunction(update,context):
-    #TO GET THE PHOTO SENT BY USER YOU CAN USE THE FOLLOW METHOD AND PARAM
-    #context.bot.get_file(update.message.photo[-1])
-    #IF WE WANT TO SEND A PHOTO THE PATTERN IS:
-    # context.bot.send_photo(chat_id=update.effective_chat.id, photo='PHOTO URL', caption= 'CAPTION BELOW THE PHOTO TO SEND')
-    context.bot.send_message(chat_id=update.effective_chat.id, text='MESSAGE TO SEND HERE')
+def main():
+    token = os.environ.get("BOT_TOKEN")
     
-#HANDLER FOR TEXT MESSAGES ONLY
-TextHandler =  MessageHandler(Filters.text,TextFunction)
-#HANDLER FOR IMAGE MESSAGE ONLY
-photoHandler =  MessageHandler(Filters.photo, ImgFunction)
+    if not token or not token.strip():
+        raise ValueError("❌ Токен не найден! Убедись, что переменная окружения BOT_TOKEN установлена.")
 
-#YOU CAN COMBINE 2 OR MORE FILETRS. EXAMPLE AN HANDLER TO MANAGE MESSAGES WITH CAPTION WILL BE:
-# GotImageAndCaption = MessageHandler(Filters.photo & Filters.caption, some_function)
+    app = ApplicationBuilder().token(token.strip()).build()
+    app.add_handler(CommandHandler("start", start))
+    app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, echo))
+    
+    app.run_polling()
 
-#HANDLER FOR COMMAND
-start_handler = CommandHandler('start', start)
-
-#ADDING HANDLER AS EVENT LISTENER
-dispatcher.add_handler(TextHandler)
-dispatcher.add_handler(photoHandler)
-dispatcher.add_handler(start_handler)    
-
-#UPDATER START LOOPING
-updater.start_polling()
-
+if __name__ == "__main__":
+    main()
